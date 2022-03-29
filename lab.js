@@ -184,7 +184,7 @@ delete user.age
 */
 
 //Code here
-class cat {
+class Cat {
   constructor(name, age, color) {
     this.name = name,
     this.age = age,
@@ -192,7 +192,7 @@ class cat {
   }
 }
 
-let myCat = new cat('Bosco', 7, 'black')
+let myCat = new Cat('Bosco', 7, 'black')
 console.log(myCat.name);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
@@ -204,7 +204,7 @@ console.log(myCat.name);
 */
 
 //Code here
-class wizard {
+class Wizard {
   constructor(name, age, favoriteSpell) {
     this.name = name,
     this.age = age,
@@ -216,7 +216,7 @@ class wizard {
   }
 }
 
-let harryPotter = new wizard('Harry Potter', 12, 'ridiculoso');
+let harryPotter = new Wizard('Harry Potter', 12, 'ridiculoso');
 harryPotter.castSpell();
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
@@ -243,7 +243,7 @@ harryPotter.castSpell();
 */
 
 //Code Here
-class phone {
+class Phone {
   constructor(brand, model, storage, color, price) {
     this.brand = brand,
     this.model = model,
@@ -274,9 +274,9 @@ class phone {
 */
 
 //Code Here
-let iPhone = new phone('Apple', 'iPhone13', 256, 'Blue', '$1,100');
-let google = new phone('Google', 'Pixel', 256, 'Red', '$899');
-let nokia = new phone('Nokia', 'Verizon', 64, 'Green', '$59.00')
+let iPhone = new Phone('Apple', 'iPhone13', 256, 'Blue', '$1,100');
+let google = new Phone('Google', 'Pixel', 256, 'Red', '$899');
+let nokia = new Phone('Nokia', 'Verizon', 64, 'Green', '$59.00')
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -359,7 +359,7 @@ console.log(helensInfo);
 */
 
 //Code Here 
-class vehicle {
+class Vehicle {
   constructor(capacity, color, milage) {
     this.capacity = capacity,
     this.color = color,
@@ -377,7 +377,7 @@ class vehicle {
 */
 
 //Code Here
-const myFirstVehicle = new vehicle(4, 'Green', 55000);
+const myFirstVehicle = new Vehicle(4, 'Green', 55000);
 
 /* 
   Now we'll create a class that's based off of the vehicle class. 
@@ -388,7 +388,7 @@ const myFirstVehicle = new vehicle(4, 'Green', 55000);
 */
 
 //Code Here
-class motorcycle extends vehicle {
+class Motorcycle extends Vehicle {
   constructor(capacity, color, milage, make, isCool) {
     super(capacity, color, milage)
     this.make = make;
@@ -400,7 +400,7 @@ class motorcycle extends vehicle {
 */
 
 //Code Here 
-const myFirstMotorcycle = new motorcycle(1, 'Black', 10000, 'Harley', true)
+const myFirstMotorcycle = new Motorcycle(1, 'Black', 10000, 'Harley', true)
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
@@ -422,7 +422,7 @@ myFirstMotorcycle.move(50);
 */
 
 //Code Here
-class boat extends vehicle {
+class Boat extends Vehicle {
   constructor(capacity, color, milage, name, type, isSeaworthy) {
     super(capacity, color, milage);
     this.name = name;
@@ -447,7 +447,7 @@ class boat extends vehicle {
 */
 
 //Code Here
-const projectBoat = new boat(4, 'Blue', 50000, 'Boaty McBoatface', 'Pontoon', false);
+const projectBoat = new Boat(4, 'Blue', 50000, 'Boaty McBoatface', 'Pontoon', false);
 /*
   Call the checkSeaworthiness method on your new boat
 */
