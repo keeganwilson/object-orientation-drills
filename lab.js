@@ -186,9 +186,9 @@ delete user.age
 //Code here
 class Cat {
   constructor(name, age, color) {
-    this.name = name,
-    this.age = age,
-    this.color = color
+    this.name = name;
+    this.age = age;
+    this.color = color;
   }
 }
 
@@ -206,9 +206,9 @@ console.log(myCat.name);
 //Code here
 class Wizard {
   constructor(name, age, favoriteSpell) {
-    this.name = name,
-    this.age = age,
-    this.favoriteSpell = favoriteSpell
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
   }
 
   castSpell(){
@@ -245,12 +245,12 @@ harryPotter.castSpell();
 //Code Here
 class Phone {
   constructor(brand, model, storage, color, price) {
-    this.brand = brand,
-    this.model = model,
-    this.storage = storage,
-    this.color = color,
-    this.price = price,
-    this.sold = false
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
   }
 
   sell() {
@@ -274,9 +274,9 @@ class Phone {
 */
 
 //Code Here
-let iPhone = new Phone('Apple', 'iPhone13', 256, 'Blue', '$1,100');
-let google = new Phone('Google', 'Pixel', 256, 'Red', '$899');
-let nokia = new Phone('Nokia', 'Verizon', 64, 'Green', '$59.00')
+let iPhone = new Phone('Apple', 'iPhone13', 256, 'Blue', 1,100);
+let google = new Phone('Google', 'Pixel', 256, 'Red', 899);
+let nokia = new Phone('Nokia', 'Verizon', 64, 'Green', 59.00)
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -285,7 +285,7 @@ let nokia = new Phone('Nokia', 'Verizon', 64, 'Green', '$59.00')
 */ 
 
 //Code Here 
-iPhone.changePrice('$999');
+iPhone.changePrice(999);
 console.log(iPhone);
 /*
   Now call the sell method on one of your other phone objects
