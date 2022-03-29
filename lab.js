@@ -361,14 +361,14 @@ console.log(helensInfo);
 //Code Here 
 class Vehicle {
   constructor(capacity, color, milage) {
-    this.capacity = capacity,
-    this.color = color,
-    this.milage = milage
+    this.capacity = capacity;
+    this.color = color;
+    this.milage = milage;
   }
 
   move(miles) {
-    this.milage += miles
-    console.log(this.milage)
+    this.milage += miles;
+    console.log(this.milage);
   } 
 };
 
@@ -390,7 +390,7 @@ const myFirstVehicle = new Vehicle(4, 'Green', 55000);
 //Code Here
 class Motorcycle extends Vehicle {
   constructor(capacity, color, milage, make, isCool) {
-    super(capacity, color, milage)
+    super(capacity, color, milage);
     this.make = make;
     this.isCool = isCool;
   }
